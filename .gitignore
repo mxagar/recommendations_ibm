@@ -133,3 +133,7 @@ dmypy.json
 
 # OS
 .DS_Store
+
+# Links & Co.
+eda_fe_summary
+course_recommender_streamlit
