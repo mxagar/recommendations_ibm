@@ -35,8 +35,26 @@ The directory of the project consists of the following files:
 
 ```
 .
-├── Instructions.md           # Original challenge instructions
-...
+├── Instructions.md
+├── README.md
+├── Recommendations_with_IBM.ipynb
+├── article_recommender
+│   └── __init__.py
+├── conda.yaml
+├── data
+│   ├── articles_community.csv
+│   ├── top_10.p
+│   ├── top_20.p
+│   ├── top_5.p
+│   ├── user-item-interactions.csv
+│   └── user_item_matrix.p
+├── project_tests.py
+├── requirements.txt
+├── setup.py
+├── starter/
+└── tests
+    ├── conftest.py
+    └── test_article_recommender.py
 ```
 
 You can run the notebook at leas in two ways:
