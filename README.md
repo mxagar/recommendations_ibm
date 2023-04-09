@@ -54,17 +54,17 @@ If you'd like to control where the notebook runs, you need to create a custom en
 ```bash
 # Create environment with YAML, incl. packages
 conda env create -f conda.yaml
-conda activate env-name
-# Or
-conda create --name env-name pip
-conda install <package>
+conda activate rec-ibm
 
-# Install pip dependencies
+# Or
+conda create --name rec-ibm pip python=3.9
+conda activate rec-ibm
+# and install version-specific pip dependencies
 pip install -r requirements.txt
 
-# Track any changes and versions you have
-conda env export > conda_.yaml
-pip list --format=freeze > requirements_.txt
+# To track any changes and versions you have
+conda env export > conda.yaml
+pip list --format=freeze > requirements.txt
 ```
 
 List of most important dependencies:
