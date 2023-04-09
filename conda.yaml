@@ -1,0 +1,29 @@
+name: rec-ibm
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - requests
+  - pip
+  - jupyter
+  - jupyterlab
+  - scikit-learn
+  - scipy
+  - numpy
+  - pandas
+  - pandas-datareader
+  - matplotlib
+  - seaborn
+  - cython
+  - nltk
+  - numba
+  - pip:
+      - protobuf
+      - autopep8
+      - joblib
+      - pytest
+      - setuptools
+      - wheel
+      - spacy
+      - progressbar
