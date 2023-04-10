@@ -14,7 +14,7 @@ def sol_1_test(sol_1_dict):
     '`The total number of user-article interactions in the dataset is ______.`': 45993,
     '`The maximum number of user-article interactions by any 1 user is ______.`': 364,
     '`The most viewed article in the dataset was viewed _____ times.`': 937,
-    '`The article_id of the most viewed article is ______.`': '1429.0',
+    '`The article_id of the most viewed article is ______.`': 1429, # '1429.0'
     '`The number of unique articles that have at least 1 rating ______.`': 714,
     '`The number of unique users in the dataset is ______`': 5148,
     '`The number of unique articles on the IBM platform`': 1051,
@@ -33,10 +33,12 @@ def sol_2_test(top_articles):
     top_5 = top_articles(5)
     top_10 = top_articles(10)
     top_20 = top_articles(20)
+    tops = [top_5, top_10, top_20]
     
-    checks = ['top_5', 'top_10', 'top_20']
+    checks = ['data/top_5', 'data/top_10', 'data/top_20']
     for idx, file in enumerate(checks):
-        if set(eval(file)) == set(pickle.load(open( "{}.p".format(file), "rb" ))):
+        #if set(eval(file)) == set(pickle.load(open( "{}.p".format(file), "rb" ))):
+        if set(tops[idx]) == set(pickle.load(open( "{}.p".format(file), "rb" ))):
             print("Your {} looks like the solution list! Nice job.".format(file))
         else:
             print("Oops! The {} list doesn't look how we expected.  Try again.".format(file))
