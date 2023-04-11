@@ -2,13 +2,21 @@
 
 This repository contains a Recommender System which suggests new articles to the users of the IBM Watson Studio Platform.
 
+I took the starter code for this repository from a Udacity assignment project and modified it to the present form, which deviates significantly from the original form; see [`starter`](starter).
 
+:construction: On-going work.
 
-1. Exploratory Data Analysis
-2. Rank-based recommendations
-3. User-user-based recommendations
-4. Content-based recommendations
-5. Matrix factorization
+:warning: Even though the project is finished, I will finish the production code and this documentation `README.md` in the coming days.
+
+Contents:
+
+- [x] Exploratory Data Analysis
+- [x] Rank-based recommendations
+- [x] User-user-based recommendations
+- [x] Content-based recommendations
+- [x] Matrix factorization
+- [ ] Package with production code
+- [ ] Testing
 
 
 ## Table of Contents
@@ -29,7 +37,11 @@ This repository contains a Recommender System which suggests new articles to the
 
 ## Dataset
 
+:construction: TBD.
+
 ## How to Use This Project
+
+:construction: TBD.
 
 The directory of the project consists of the following files:
 
@@ -56,14 +68,6 @@ The directory of the project consists of the following files:
     ├── conftest.py
     └── test_article_recommender.py
 ```
-
-You can run the notebook at leas in two ways:
-
-1. In a custom environment, e.g., locally or on a container. To that end, you can create a [conda](https://docs.conda.io/en/latest/) environment and install the [dependencies](#installing-dependencies-for-custom-environments) as explained below.
-2. In Google Colab. For that, simply click on the following link:
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mxagar/airbnb_data_analysis/blob/master/00_AirBnB_DataAnalysis_Initial_Tests.ipynb)
-
 
 ### Installing Dependencies for Custom Environments
 
@@ -92,24 +96,23 @@ List of most important dependencies:
 
 ## Notes on Theory
 
+:construction: TBD.
+
 ## Notes on the Implemented Analysis and Modeling
 
-### Summary of Contents
-
-- [ ] A
-- [ ] B
+:construction: TBD.
 
 ## Results and Conclusions
 
+:construction: TBD.
+
 ## Next Steps, Improvements
+
+:construction: TBD.
 
 ## References and Links
 
-- A
-- B
-- C
-- Link
-- Link
+:construction: TBD.
 
 ## Authorship
 
