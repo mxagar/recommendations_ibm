@@ -28,7 +28,6 @@ Contents:
     - [Installing Dependencies for Custom Environments](#installing-dependencies-for-custom-environments)
   - [Notes on Theory](#notes-on-theory)
   - [Notes on the Implemented Analysis and Modeling](#notes-on-the-implemented-analysis-and-modeling)
-    - [Summary of Contents](#summary-of-contents)
   - [Results and Conclusions](#results-and-conclusions)
   - [Next Steps, Improvements](#next-steps-improvements)
   - [References and Links](#references-and-links)
@@ -106,6 +105,9 @@ List of most important dependencies:
 
 :construction: TBD.
 
+- Accuracy is not the best metric here, because the user-item matrix contains almost only zeros.
+- Explain A/B testing: how to separate user groups? which metrics tracked?
+
 ## Next Steps, Improvements
 
 :construction: TBD.
@@ -113,6 +115,13 @@ List of most important dependencies:
 ## References and Links
 
 :construction: TBD.
+
+- [Netflix: System Architectures for Personalization and Recommendation - Earliest Architecture Design](https://netflixtechblog.com/system-architectures-for-personalization-and-recommendation-e081aa94b5d8)
+- [Netflix: Articles Recommender Systems](https://netflixtechblog.com/tagged/recommendations)
+- [Evaluating Recommender Systems: Choosing the best one for your business](https://medium.com/recombee-blog/evaluating-recommender-systems-choosing-the-best-one-for-your-business-c688ab781a35)
+- [An introduction to SVD and its widely used applications](https://towardsdatascience.com/an-introduction-to-svd-and-its-widely-used-applications-f5b8f19cb6cb)
+- [How Does the Funk Singular Value Decomposition Algorithm work in Recommendation Engines?](https://medium.datadriveninvestor.com/how-funk-singular-value-decomposition-algorithm-work-in-recommendation-engines-36f2fbf62cac)
+- [Solving Cold User problem for Recommendation system using Multi-Armed Bandit](https://towardsdatascience.com/solving-cold-user-problem-for-recommendation-system-using-multi-armed-bandit-d36e42fe8d44)
 
 ## Authorship
 
