@@ -4,43 +4,18 @@ This repository contains a Recommender System which suggests new articles to the
 
 I took the starter code for this repository from a Udacity assignment project and modified it to the present form, which deviates significantly from the original form; see [`starter`](starter).
 
-:construction: On-going work.
-
-:warning: Even though the project is finished, I will finish the production code and this documentation `README.md` in the coming days.
-
-Contents:
-
-- [x] Exploratory Data Analysis
-- [x] Rank-based recommendations
-- [x] User-user-based recommendations
-- [x] Content-based recommendations
-- [x] Matrix factorization
-- [ ] Package with production code
-- [ ] Testing
-
-
 ## Table of Contents
 
 - [Recommender System for the IBM Watson Studio Platform](#recommender-system-for-the-ibm-watson-studio-platform)
   - [Table of Contents](#table-of-contents)
-  - [Dataset](#dataset)
   - [How to Use This Project](#how-to-use-this-project)
     - [Installing Dependencies for Custom Environments](#installing-dependencies-for-custom-environments)
-  - [Notes on Theory](#notes-on-theory)
-  - [Notes on the Implemented Analysis and Modeling](#notes-on-the-implemented-analysis-and-modeling)
-  - [Results and Conclusions](#results-and-conclusions)
+  - [Notes on Recommender Systems and Their Implementation](#notes-on-recommender-systems-and-their-implementation)
   - [Next Steps, Improvements](#next-steps-improvements)
-  - [References and Links](#references-and-links)
+  - [Interesting Links](#interesting-links)
   - [Authorship](#authorship)
 
-
-## Dataset
-
-:construction: TBD.
-
 ## How to Use This Project
-
-:construction: TBD.
 
 The directory of the project consists of the following files:
 
@@ -48,11 +23,11 @@ The directory of the project consists of the following files:
 .
 ├── Instructions.md
 ├── README.md
-├── Recommendations_with_IBM.ipynb
+├── Recommendations_with_IBM.ipynb        # Main notebook
 ├── article_recommender
 │   └── __init__.py
 ├── conda.yaml
-├── data
+├── data                                  # Dataset
 │   ├── articles_community.csv
 │   ├── top_10.p
 │   ├── top_20.p
@@ -67,6 +42,8 @@ The directory of the project consists of the following files:
     ├── conftest.py
     └── test_article_recommender.py
 ```
+
+The complete project is implemented in the notebook [`Recommendations_with_IBM.ipynb`](./Recommendations_with_IBM.ipynb) at the moment; I would port it to a production-level package if I had time.
 
 ### Installing Dependencies for Custom Environments
 
@@ -88,33 +65,26 @@ conda env export > conda.yaml
 pip list --format=freeze > requirements.txt
 ```
 
-List of most important dependencies:
+## Notes on Recommender Systems and Their Implementation
 
-- A
-- B
+If you are looking for theory and implementation details on recommender systems, check the related modules in these repositories of mine:
 
-## Notes on Theory
+- Notes on the Udacity Data Science Nanodegree: [data_science_udacity](https://github.com/mxagar/data_science_udacity).
+- Notes on the IBM Machine Learning Certificate: [machine_learning_ibm](https://github.com/mxagar/machine_learning_ibm).
 
-:construction: TBD.
-
-## Notes on the Implemented Analysis and Modeling
-
-:construction: TBD.
-
-## Results and Conclusions
-
-:construction: TBD.
-
-- Accuracy is not the best metric here, because the user-item matrix contains almost only zeros.
-- Explain A/B testing: how to separate user groups? which metrics tracked?
+At the moment, this mini-project is basically a notebook; if you'd like to know how I'd transform it to production code, you can check my project [customer_churn_production](https://github.com/mxagar/customer_churn_production). Similarly, I have a comparable recommender system which is packaged into a Streamlit app: [course_recommender_streamlit](https://github.com/mxagar/course_recommender_streamlit).
 
 ## Next Steps, Improvements
 
-:construction: TBD.
+- [x] Exploratory Data Analysis
+- [x] Rank-based recommendations
+- [x] User-user-based recommendations
+- [x] Content-based recommendations
+- [x] Matrix factorization
+- [ ] Package with production code
+- [ ] Testing
 
-## References and Links
-
-:construction: TBD.
+## Interesting Links
 
 - [Netflix: System Architectures for Personalization and Recommendation - Earliest Architecture Design](https://netflixtechblog.com/system-architectures-for-personalization-and-recommendation-e081aa94b5d8)
 - [Netflix: Articles Recommender Systems](https://netflixtechblog.com/tagged/recommendations)
